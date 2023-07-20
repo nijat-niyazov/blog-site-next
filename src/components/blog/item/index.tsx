@@ -8,6 +8,7 @@ type Props = {
 const BlogItem = ({ blog }: Props) => {
   return (
     <li className="p-2 border-2 border-gray-200 flex justify-between text-gray-200 rounded-md hover:scale-110 transition-all">
+      
       <Link href={`/blog/${blog.id}`} className="w-full ">
         <span>{blog.title}</span>
       </Link>

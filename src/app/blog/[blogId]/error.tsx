@@ -1,4 +1,5 @@
 'use client';
+
 const ErrorBlog = () => {
   return <div>ErrorBlog</div>;
 };

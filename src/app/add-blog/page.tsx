@@ -1,14 +1,14 @@
 import { BlogAddForm } from '@/components/blog';
 import BreadCrumbs from '@/components/breadcrumbs';
+import { Metadata } from 'next';
 
-type Props = {};
+export const metadata: Metadata = {
+  title: 'Add new blog',
+};
 
-const AddBlog = (props: Props) => {
-  // const handleChange = seState => (e: ChangeEvent<HTMLInputElement>) =>
-  //   setState(e.target.value);
-
+const AddBlog = () => {
   return (
-    <div className="bg-blue-700 p-4 h-screen text-white">
+    <div className="p-4  text-white">
       <BreadCrumbs />
       <BlogAddForm />
     </div>
